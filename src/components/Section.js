@@ -11,6 +11,7 @@ const Section = (props) => {
             </p>
             <div className="movies-list">
               {section.images.map((image, index) => {
+                // eslint-disable-next-line jsx-a11y/img-redundant-alt
                 return <img key={index} src={image} alt="Cover image" />;
               })}
             </div>
